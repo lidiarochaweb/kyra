@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYRA Perfumes e Presentes</title>
+  <meta name="description" content="KYRA Perfumes e Presentes — perfumes e presentes selecionados para você.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio">
+        <img src="logo-kyra.jpeg" alt="KYRA Perfumes e Presentes">
+      </a>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#perfumes">Perfumes</a>
+        <a href="#presentes">Presentes</a>
+        <a href="#sobre">Sobre nós</a>
+      </nav>
+      <button class="cart-btn" id="openCart" aria-label="Abrir carrinho">
+        <span>🛍</span> Carrinho <b id="cartCount">0</b>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">KYRA PERFUMES E PRESENTES</span>
+        <h1>Uma fragrância que<br><em>marca presença.</em></h1>
+        <p>Perfumes selecionados, presentes especiais e uma experiência feita para você.</p>
+        <a class="primary-btn" href="#perfumes">Ver perfumes</a>
+      </div>
+      <div class="hero-bottle">
+        <div class="glow"></div>
+        <div class="bottle">
+          <div class="cap"></div>
+          <div class="bottle-neck"></div>
+          <div class="bottle-body">
+            <span>KYRA</span>
+            <small>EAU DE PARFUM</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><strong>✦</strong><span>Perfumes selecionados</span></div>
+      <div><strong>✦</strong><span>Presentes para todas as ocasiões</span></div>
+      <div><strong>✦</strong><span>Atendimento personalizado</span></div>
+    </section>
+
+    <section class="products-section" id="perfumes">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">COLEÇÃO KYRA</span>
+          <h2>Perfumes em destaque</h2>
+        </div>
+        <p>Valores calculados com acréscimo de 20% sobre preços de referência encontrados no mercado.</p>
+      </div>
+
+      <div class="products-grid" id="productGrid"></div>
+    </section>
+
+    <section class="gift-section" id="presentes">
+      <div>
+        <span class="eyebrow">PARA PRESENTEAR</span>
+        <h2>O presente perfeito começa pela fragrância.</h2>
+        <p>Monte seu presente com perfume, embalagem especial e uma mensagem personalizada.</p>
+        <a class="outline-btn" href="https://wa.me/5583996764972?text=Olá%20KYRA!%20Quero%20montar%20um%20presente." target="_blank">Falar pelo WhatsApp</a>
+      </div>
+      <div class="gift-card">
+        <div class="gift-icon">🎁</div>
+        <h3>Presente KYRA</h3>
+        <p>Embalagem elegante + cartão personalizado</p>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <span class="eyebrow">SOBRE A KYRA</span>
+      <h2>Elegância em cada detalhe.</h2>
+      <p>A KYRA Perfumes e Presentes foi pensada para transformar a escolha de uma fragrância em uma experiência especial — com curadoria, beleza e atendimento próximo.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="logo-kyra.jpeg" alt="KYRA">
+    </div>
+    <div>
+      <p>KYRA PERFUMES E PRESENTES</p>
+      <p class="muted">Perfume • Presentes • Elegância</p>
+    </div>
+    <a href="https://wa.me/5583996764972" target="_blank">(83) 99676-4972</a>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay">
+    <aside class="cart">
+      <div class="cart-header">
+        <h2>Seu carrinho</h2>
+        <button id="closeCart">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-empty" id="cartEmpty">Seu carrinho está vazio.</div>
+      <div class="cart-footer">
+        <div><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+        <button class="checkout-btn" id="checkout">Finalizar pelo WhatsApp</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
